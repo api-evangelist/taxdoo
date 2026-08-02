@@ -1,7 +1,24 @@
 aid: taxdoo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/taxdoo.png
 name: Taxdoo
-description: 'Taxdoo is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Taxdoo is a Hamburg-based fintech providing real-time e-commerce accounting software
+  for online retailers and tax advisors. The platform automatically captures sales, fees, payments,
+  invoices, and contracts across 50+ marketplaces, shop systems, and payment providers (Amazon, eBay,
+  Kaufland, Shopify, JTL, PayPal, Stripe, Klarna, Mollie), reconciles them into GoBD-compliant,
+  audit-ready financial data, performs AI-based invoice verification, and exports daily to DATEV.
+  Integrations are delivered as managed no-code connectors; Taxdoo does not publish a public developer
+  API, developer portal, or API reference. Backed by Accel.'
 url: https://raw.githubusercontent.com/api-evangelist/taxdoo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +26,19 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-surface: none-public
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Accounting
+- E-commerce
+- Tax Compliance
+- VAT
+- DATEV
+- Payments Reconciliation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +48,20 @@ maintainers:
 common:
 - type: Website
   url: https://www.taxdoo.com/
+- type: Pricing
+  url: https://www.taxdoo.com/de/preise/
+- type: Blog
+  url: https://www.taxdoo.com/de/blog/
+- type: PrivacyPolicy
+  url: https://www.taxdoo.com/de/datenschutzerklaerung/
+- type: HelpCenter
+  url: https://www.taxdoo.com/de/wissen/
+- type: Support
+  url: https://www.taxdoo.com/de/kontakt/
+- type: DomainSecurity
+  url: security/taxdoo-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
